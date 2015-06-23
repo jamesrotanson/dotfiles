@@ -1,6 +1,6 @@
 [user]
-    name = James Whitney
-    email = james@whitney.io
+    name = James Rotanson
+    email = jamesrotanson@gmail.com
 
 [init]
     templatedir = ~/.git_templates
@@ -13,8 +13,13 @@
     filemode = true
     quotepath = false
 
+[filter "lfs"]
+    clean = git lfs clean %f
+    smudge = git lfs smudge %f
+    required = true
+
 [credential]
-    helper = store
+    helper = osxkeychain
 
 [url "https://"]
     insteadOf = git://
